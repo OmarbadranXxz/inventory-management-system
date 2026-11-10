@@ -28,6 +28,11 @@ public class Main {
 
                     System.out.println("Name: ");
                     String name = scanner.nextLine();
+                    while(name.contains(",")){
+                        System.out.println("Name contains unsupported character ','");
+                        System.out.print("Name: ");
+                        name = scanner.nextLine();
+                    }
 
                     System.out.println("ID: ");
                     int id = scanner.nextInt();
@@ -84,6 +89,11 @@ public class Main {
                     else{
                         System.out.println("Name: ");
                         String updatedName = scanner.nextLine();
+                        while(updatedName.contains(",")){
+                            System.out.println("Name contains unsupported character ','");
+                            System.out.print("Name: ");
+                            updatedName = scanner.nextLine();
+                        }
 
                         System.out.println("Price: ");
                         double updatedPrice = scanner.nextDouble();
